@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference Format Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="header">Research Reference Formatter</h1>
+        <div class="editor-container">
+            <div class="input">
+                <div class="format-selector">
+                    <label for="cars">Format from: </label>
+                    <select name="cars" id="cars">
+                        <option value="APA">APA</option>
+                        <option value="Harvard">Harvard</option>
+                        <option value="Vancoover">Vancoover</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <textarea id="inputText" placeholder="Paste your text here"></textarea>
+            </div>
+            <div class="output">
+                <div class="format-selector">
+                    <label for="cars">Format to: </label>
+                    <select name="cars" id="cars">
+                        <option value="APA">APA</option>
+                        <option value="Harvard">Harvard</option>
+                        <option value="Vancoover">Vancoover</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <textarea id="outputText" placeholder="Your formated references will be here" readonly></textarea>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="formatButton">Format Text</button>
+            <button id="copyButton">Copy Result</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
